@@ -4,7 +4,7 @@ import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { useSearchParams } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 export default function Home() {
   // 모델 아이디 값으로 glb url 구성해서 모델 다운로드
