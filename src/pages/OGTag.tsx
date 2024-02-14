@@ -21,6 +21,8 @@ export default function OGTag() {
       </Helmet>
       <h1>OG Tag</h1>
       <div>{title}</div>
+      <div>{image}</div>
+      <div>{description}</div>
     </div>
   );
 }
