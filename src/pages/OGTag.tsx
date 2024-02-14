@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { useSearchParams } from "react-router-dom";
 
 export default function OGTag() {
@@ -10,12 +10,17 @@ export default function OGTag() {
   return (
     <div>
       <Helmet>
-        <meta property="og:title" content={title} />
-        <meta property="og:image" content={image} />
-        <meta property="og:url" content="https://twin.world" />
-        <meta property="og:description" content={description} />
+        <title>{title}</title>
+        <meta property="og:title" content="A very important title" />
+        <meta
+          property="og:image"
+          content="https://source.unsplash.com/random/600×300"
+        />
+        <link rel="canonical" href="https://www.tacobell.com" />
+        <link rel="notImportant" href="https://www.chipotle.com" />
       </Helmet>
       <h1>OG Tag</h1>
+      <div>{title}</div>
     </div>
   );
 }
