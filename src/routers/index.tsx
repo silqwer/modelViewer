@@ -3,6 +3,7 @@ import App from "@/App";
 import Home from "@/pages/Home";
 import Error from "@/pages/Error";
 import OGTag from "@/pages/OGTag";
+import OGTag1 from "@/pages/OGTag1";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/tag",
         element: <OGTag />,
+      },
+      {
+        path: "/tag1",
+        element: <OGTag1 />,
       },
     ],
     errorElement: <Error />,
