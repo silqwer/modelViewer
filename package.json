@@ -6,9 +6,14 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "tsc && vite build && echo '/* /index.html 200' | cat > dist/_redirects",
+    "postbuild": "react-snap",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "server": "node server.js"
+  },
+  "reactSnap": { 
+    "include": [ "/", "/tag" ],
+    "source" : "./dist"
   },
   "dependencies": {
     "@react-three/drei": "^9.97.5",
@@ -22,6 +27,7 @@
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.4",
     "react-router-dom": "^6.22.0",
+    "react-snap": "^1.23.0",
     "three": "^0.161.0"
   },
   "devDependencies": {

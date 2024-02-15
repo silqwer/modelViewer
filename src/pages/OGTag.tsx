@@ -16,8 +16,6 @@ export default function OGTag() {
           property="og:image"
           content="https://source.unsplash.com/random/600×300"
         />
-        <link rel="canonical" href="https://www.tacobell.com" />
-        <link rel="notImportant" href="https://www.chipotle.com" />
       </Helmet>
       <h1>OG Tag</h1>
       <div>{title}</div>
